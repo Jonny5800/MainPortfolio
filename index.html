@@ -18,7 +18,7 @@
     ></script>
   </head>
   <body>
-    <section class="hero-background">
+    <section class="header-section">
       <div class="container mb-0">
         <div class="header">
           <div class="headerLeft"><strong>JONNY</strong></div>
@@ -29,7 +29,7 @@
       </div>
     </section>
 
-    <section class="section hero-background">
+    <section class="section hero-background landing-section">
       <div class="container">
         <div class="hero-section">
           <div class="hero-left">
@@ -54,19 +54,27 @@
       <div class="container">
         <div class="container">
           <p class="mini-title-p"><span class="mini-title">About Me</span></p>
-          <h2 class="section-header">Know Me More</h2>
+          <h2 class="section-header">Allow me to introcuce myself</h2>
         </div>
 
         <div class="know-me-more">
           <div class="know-me-more-left">
             <div>
-              Hi, I'm <span class="underline"><strong>Jonny</strong></span>
+              Hi, I'm <span class="underline"><strong>Jonny Hall</strong></span>
+            </div>
+            <div>Thanks for checking out my page!</div>
+            <div>
+              Originally from Yorkshire, I live in London, England and I am a
+              Front End Developer
             </div>
             <div>
-              I'm a developer Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Quos quisquam dolores iusto alias, quo nesciunt
-              quod sed, pariatur animi id qui, asperiores consequatur. Maxime
-              labore repudiandae consequuntur nihil magnam necessitatibus.
+              I have proficiency in the usuals such as
+              <strong>HTML, CSS and JavaScript</strong> and I'm interested in
+              building new <strong>Web Based Poducts</strong>
+            </div>
+            <div>
+              When I can, I enjoy developing with React and
+              <strong>TypeScript</strong>
             </div>
           </div>
           <div class="know-me-more-right">
@@ -100,7 +108,7 @@
         </div>
         <div class="what-i-do-items text-align-center">
           <div class="what-do-items-top-row">
-            <div class="card" style="width: 18rem">
+            <div class="card what-i-do-top-row-items" style="width: 18rem">
               <img
                 src="./Images/WhatIDo/webDeveloping.jpg"
                 class="card-img-top"
@@ -109,10 +117,9 @@
               <div class="card-body">
                 <h5 class="card-title">Web Development</h5>
                 <p class="card-text">I can use my skills to build websites.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card" style="width: 18rem">
+            <div class="card what-i-do-top-row-items" style="width: 18rem">
               <img
                 src="./Images/WhatIDo/takingNote.jpg"
                 class="card-img-top"
@@ -120,11 +127,12 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Keen to Improve</h5>
-                <p class="card-text">So far self taught, keen and eager to</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">
+                  So far self taught, keen and eager to learn more
+                </p>
               </div>
             </div>
-            <div class="card" style="width: 18rem">
+            <div class="card what-i-do-top-row-items" style="width: 18rem">
               <img
                 src="./Images/WhatIDo/newPerspective.jpg"
                 class="card-img-top"
@@ -136,13 +144,12 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
           <div class="what-do-items-bottom-row">
             <div class="what-do-items-top-row">
-              <div class="card" style="width: 18rem">
+              <div class="card what-i-do-bottom-row-items" style="width: 18rem">
                 <img
                   src="./Images/WhatIDo/teamPlayer.jpg"
                   class="card-img-top"
@@ -154,10 +161,9 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card what-i-do-bottom-row-items" style="width: 18rem">
                 <img
                   src="./Images/WhatIDo/problemSolving.jpg"
                   class="card-img-top"
@@ -169,10 +175,9 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              <div class="card" style="width: 18rem">
+              <div class="card what-i-do-bottom-row-items" style="width: 18rem">
                 <img
                   src="./Images/WhatIDo/softSkills-two.jpg"
                   class="card-img-top"
@@ -184,7 +189,6 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
@@ -231,6 +235,10 @@
               </p>
             </div>
           </div>
+
+          <div id="summary-experience-header-narrow-view">
+            <h3>My Experience</h3>
+          </div>
           <div class="summary-section-right">
             <div class="card summary-item-right">
               <h4>education place/job title</h4>
@@ -260,6 +268,9 @@
               </p>
             </div>
           </div>
+        </div>
+        <div class="cv-button-div">
+          <button class="cv-button">Download CV</button>
         </div>
       </div>
     </section>
@@ -482,19 +493,21 @@
     </section>
 
     <section class="section contact-section">
-      <div class="container">
+      <div class="container contact-container">
         <div class="main-contact-section">
           <div class="contact-section-left">
             <div class="contact-header-left"><h2>Lets Get in Touch</h2></div>
-            <div class="contact-left-sect-a">
+            <div class="contact-left-sect-a text-5">
               I enjoy discussing Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Beatae optio eaque nemo enim dolor. Illo!
             </div>
             <div class="contact-left-sect-b">
-              <strong>Living in:</strong> Address Lorem ipsum dolor sit amet.
+              <strong>Living in:</strong>
+              <div>Address Lorem ipsum dolor sit amet.</div>
             </div>
             <div class="contact-left-sect-c">
-              <strong>Call:</strong>+447749519916
+              <strong>Call:</strong>
+              <div>+447749519916</div>
             </div>
             <div class="contact-left-sect-d">
               <i class="fa-brands fa-github fa-xl"></i>
