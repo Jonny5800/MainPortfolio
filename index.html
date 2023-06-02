@@ -18,7 +18,7 @@
     ></script>
   </head>
   <body>
-    <section class="background-color-hero">
+    <section class="hero-background">
       <div class="container mb-0">
         <div class="header">
           <div class="headerLeft"><strong>JONNY</strong></div>
@@ -29,7 +29,7 @@
       </div>
     </section>
 
-    <section class="background-color-hero section">
+    <section class="section hero-background">
       <div class="container">
         <div class="hero-section">
           <div class="hero-left">
@@ -93,8 +93,6 @@
     </section>
 
     <section class="section">
-      <!--What is do section-->
-      <!-- d-flex justify-content-center -->
       <div class="container">
         <div>
           <p class="mini-title-p"><span class="mini-title">What I Do</span></p>
@@ -120,7 +118,6 @@
                 class="card-img-top"
                 alt="taking note"
               />
-
               <div class="card-body">
                 <h5 class="card-title">Keen to Improve</h5>
                 <p class="card-text">So far self taught, keen and eager to</p>
@@ -199,10 +196,10 @@
     <section class="section resume-section">
       <div class="container">
         <p class="mini-title-p"><span class="mini-title">Resume</span></p>
-        <h2 class="section-header">A summary of my resume</h2>
-        <div class="summary-sub-headers d-flex">
-          <h3>My Education</h3>
-          <h3>My Experience</h3>
+        <h2 class="section-header mb-5">A summary of my resume</h2>
+        <div class="summary-sub-headers">
+          <div id="summary-education-header"><h3>My Education</h3></div>
+          <div id="summary-experience-header"><h3>My Experience</h3></div>
         </div>
         <div class="summary-section">
           <div class="summary-section-left">
@@ -224,7 +221,7 @@
                 esse.
               </p>
             </div>
-            <div class="card summary-item-left">
+            <div class="card summary-item-left" id="summary-item-left-bottom">
               <h4>education place/job title</h4>
               <h5>dates</h5>
               <p>
@@ -235,7 +232,7 @@
             </div>
           </div>
           <div class="summary-section-right">
-            <div class="card summary-item-left">
+            <div class="card summary-item-right">
               <h4>education place/job title</h4>
               <h5>dates</h5>
               <p>
@@ -244,7 +241,7 @@
                 esse.
               </p>
             </div>
-            <div class="card summary-item-left">
+            <div class="card summary-item-right">
               <h4>education place/job title</h4>
               <h5>dates</h5>
               <p>
@@ -253,10 +250,10 @@
                 esse.
               </p>
             </div>
-            <div class="card summary-item-left">
+            <div class="card summary-item-right" id="summary-item-right-bottom">
               <h4>education place/job title</h4>
               <h5>dates</h5>
-              <p>
+              <p id="summary-education-bottom">
                 description of it all Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit. Accusamus laudantium, labore quaerat ut fugit
                 esse.
@@ -274,46 +271,48 @@
       </div>
     </section>
     <section class="section">
-      <div class="container">
-        <div class="blurred-image-div">
-          <img
-            class="blurred-image"
-            src="./Images/workingFromHomeBlurred.jpg"
-            alt="work-from-home-image"
-          />
-          <div class="image-overlay">
-            <h1 class="centered-text">
-              If you like what you see, please get in contact.
-            </h1>
-          </div>
+      <div class="blurred-image-div">
+        <img
+          class="blurred-image"
+          src="./Images/workingFromHomeBlurred.jpg"
+          alt="work-from-home-image"
+        />
+        <div class="image-overlay">
+          <h1 class="centered-text">
+            If you like what you see, please get in contact.
+          </h1>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container">
-        <p class="mini-title-p"><span class="mini-title">FaQ</span></p>
-        <h2 class="section-header">Have any Questions</h2>
-      </div>
       <div class="container main-question-section">
         <div class="question-section-left">
+          <div class="questions-header-container">
+            <p class="mini-title-p" id="question-mini-title-p">
+              <span class="mini-title" id="question-mini-title">FaQ</span>
+            </p>
+            <h2 class="section-header" id="question-section-header">
+              Have any Questions
+            </h2>
+          </div>
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseOne"
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  Accordion Item #1
+                  Who is Jonny
                 </button>
               </h2>
               <div
                 id="collapseOne"
-                class="accordion-collapse collapse show"
+                class="accordion-collapse collapse"
                 aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample"
               >
@@ -342,7 +341,7 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  Accordion Item #2
+                  How can Jonny add to your company
                 </button>
               </h2>
               <div
@@ -364,6 +363,7 @@
                 </div>
               </div>
             </div>
+
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button
@@ -374,7 +374,7 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  Accordion Item #3
+                  Why did Jonny choose a career in IT
                 </button>
               </h2>
               <div
@@ -396,6 +396,77 @@
                 </div>
               </div>
             </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="true"
+                  aria-controls="collapseFour"
+                >
+                  What are Jonny's hobbies & interests
+                </button>
+              </h2>
+
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong>
+
+                  It is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item" id="accordion-item-five">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="true"
+                  aria-controls="collapseFive"
+                >
+                  Why you should hire Jonny
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong>
+
+                  It is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="question-section-right">
@@ -409,29 +480,38 @@
         </div>
       </div>
     </section>
-    <!-- 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
 
-     -->
-    <section class="section">
+    <section class="section contact-section">
       <div class="container">
-        <p class="mini-title-p"><span class="mini-title">What I Do</span></p>
-        <h2 class="section-header">How I Can help your next project</h2>
+        <div class="main-contact-section">
+          <div class="contact-section-left">
+            <div class="contact-header-left"><h2>Lets Get in Touch</h2></div>
+            <div class="contact-left-sect-a">
+              I enjoy discussing Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Beatae optio eaque nemo enim dolor. Illo!
+            </div>
+            <div class="contact-left-sect-b">
+              <strong>Living in:</strong> Address Lorem ipsum dolor sit amet.
+            </div>
+            <div class="contact-left-sect-c">
+              <strong>Call:</strong>+447749519916
+            </div>
+            <div class="contact-left-sect-d">
+              <i class="fa-brands fa-github fa-xl"></i>
+              <i class="fa-brands fa-linkedin fa-xl"></i>
+              <i class="fa-brands fa-slack fa-xl"></i>
+              <i class="fa-brands fa-whatsapp fa-xl"></i>
+            </div>
+          </div>
+          <div class="contact-section-right">
+            <div class="contact-header-right"><h2>Estimate heading</h2></div>
+            <div class="contact-right-sect-a">What is your name</div>
+            <div class="contact-right-sect-a">Your Email address</div>
+            <div class="contact-right-sect-a">How can I help you</div>
+
+            <button>Send</button>
+          </div>
+        </div>
       </div>
     </section>
     <script src="script.js"></script>
