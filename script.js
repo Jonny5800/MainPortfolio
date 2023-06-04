@@ -1,7 +1,8 @@
 document.querySelector(".send-button").addEventListener("click", function () {
   var name = document.querySelector(".contact-input-name").value;
-  var email = document.querySelector(".contact-input-email").value;
+  var email = "jonathan.hall5800@gmail.com";
   var message = document.querySelector(".contact-input-message").value;
+  //   var userEmail = document.querySelector(".contact-input-email").value;
 
   var subject = encodeURIComponent("Hi I'm " + name + ", I saw your portfolio");
   var body = encodeURIComponent(
@@ -12,6 +13,6 @@ document.querySelector(".send-button").addEventListener("click", function () {
   window.location.href = mailtoLink;
 
   document.querySelector(".contact-input-name").value = "";
-  document.querySelector(".contact-input-email").value = "";
   document.querySelector(".contact-input-message").value = "";
+  document.querySelector(".contact-input-email").value = "";
 });
