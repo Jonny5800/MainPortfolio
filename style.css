@@ -132,6 +132,9 @@
   .hero-big-text {
     font-size: 40px;
   }
+  .hero-right {
+    padding-top: 20px;
+  }
 }
 .mini-title {
   background-color: rgb(91, 161, 230);
@@ -147,16 +150,12 @@
   text-align: center;
   padding-bottom: 40px;
 }
-.about-me-section {
-  /* height: 90vh; */
-}
+
 .know-me-more {
   display: flex;
   padding-bottom: 20px;
 }
-/* .know-me-more-left {
-  flex: 3;
-} */
+
 .know-me-more-left {
   flex: 5;
   padding: 0px 40px 50px 0px;
@@ -187,9 +186,7 @@
     align-items: center;
     padding-bottom: 0px;
   }
-  .know-me-more-right {
-    /* padding: 30px 0px; */
-  }
+
   .know-me-more-left > div {
     text-align: center;
   }
