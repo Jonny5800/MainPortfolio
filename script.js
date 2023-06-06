@@ -1,3 +1,10 @@
+function scrollToElement(elementId) {
+  const element = document.getElementById(elementId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
 const imageElement = document.querySelector(".lightbulb");
 
 function pulseImage() {

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .underline {
   text-decoration: underline;
@@ -75,6 +75,9 @@
   align-items: center;
   padding-top: 20px;
 }
+.hero-contact-me:hover {
+  cursor: pointer;
+}
 .hero-left-buttons > p {
   margin: 0;
   margin-left: 10px;
@@ -86,6 +89,7 @@
   border-radius: 50%;
   border: 7px solid white;
   max-width: 100%;
+  cursor: all-scroll;
 }
 .hero-right {
   display: flex;
@@ -330,7 +334,48 @@
   background-color: white;
   border: 3px solid black;
 }
+.card-rows {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.projects-card-img-top {
+  padding-top: 30px;
+}
+.project-card {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin: 15px;
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px,
+    rgba(0, 0, 0, 0.22) 0px 18px 15px;
+  box-shadow: rgba(192, 222, 251, 0.3) 0px 25px 50px,
+    rgb(192, 222, 251, 0.3) 0px 18px 15px;
+}
 
+.project-buttons-div {
+  display: flex;
+  justify-content: center;
+}
+.project-buttons-div > a {
+  margin: 7px;
+  font-weight: bolder;
+  background-color: rgb(91, 161, 230);
+}
+
+@media (max-width: 900px) {
+  .card-rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    padding-bottom: 30px;
+  }
+}
 .blurred-image-div {
   overflow: hidden;
   position: relative;
@@ -483,11 +528,9 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid black;
-}
-.contact-input-areas {
   width: 100%;
-  resize: vertical;
 }
+
 .send-button {
   padding: 10px 25px;
   margin-top: 10px;
@@ -562,6 +605,7 @@
   height: 33.333%;
   position: absolute;
   z-index: 1;
+  cursor: all-scroll;
 }
 .t_over:nth-child(1) {
   left: 0;

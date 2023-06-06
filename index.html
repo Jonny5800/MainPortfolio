@@ -41,8 +41,18 @@
             <h2 class="hero-big-text">Hi I'm a Deveoper</h2>
             <h3 class="hero-big-text">Based in London</h3>
             <div class="hero-left-buttons">
-              <button class="button-view-work">View my Work</button>
-              <p>Contact Me</p>
+              <button
+                class="button-view-work"
+                onclick="scrollToElement('project-section')"
+              >
+                View my Work
+              </button>
+              <p
+                class="hero-contact-me"
+                onclick="scrollToElement('contact-section')"
+              >
+                Contact Me
+              </p>
             </div>
           </div>
           <div class="hero-right">
@@ -336,10 +346,88 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="project-section">
       <div class="container">
         <p class="mini-title-p"><span class="mini-title">Portfolio</span></p>
         <h2 class="section-header">Some of my most recent projects</h2>
+        <div class="project-area">
+          <div class="card-rows project-cards-top">
+            <div class="card project-card" style="width: 18rem">
+              <img
+                src="./Images/projectImages/laptopAndOrebro.jpg"
+                class="projects-card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="project-buttons-div">
+                  <a href="#" class="btn btn-primary">GitHub</a>
+                  <a href="#" class="btn btn-primary">Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="card project-card" style="width: 18rem">
+              <img
+                src="./Images/projectImages/laptopAndTaskTracker.jpg"
+                class="projects-card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="project-buttons-div">
+                  <a href="#" class="btn btn-primary">GitHub</a>
+                  <a href="#" class="btn btn-primary">Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-rows project-cards-bottom">
+            <div class="card project-card" style="width: 18rem">
+              <img
+                src="./Images/projectImages/LaptopAndCalculator.jpg"
+                class="projects-card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="project-buttons-div">
+                  <a href="#" class="btn btn-primary">GitHub</a>
+                  <a href="#" class="btn btn-primary">Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="card project-card" style="width: 18rem">
+              <img
+                src="./Images/projectImages/laptopAndBirthdayReminder.jpg"
+                class="projects-card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="project-buttons-div">
+                  <a href="#" class="btn btn-primary">GitHub</a>
+                  <a href="#" class="btn btn-primary">Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section">
@@ -365,7 +453,7 @@
               <span class="mini-title" id="question-mini-title">FaQ</span>
             </p>
             <h2 class="section-header" id="question-section-header">
-              Have any Questions
+              Have any Questions?
             </h2>
           </div>
           <div class="accordion" id="accordionExample">
@@ -553,7 +641,7 @@
       </div>
     </section>
 
-    <section class="section contact-section">
+    <section class="section contact-section" id="contact-section">
       <div class="container contact-container">
         <div class="main-contact-section">
           <div class="contact-section-left">
