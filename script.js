@@ -5,25 +5,6 @@ function scrollToElement(elementId) {
   }
 }
 
-const imageElement = document.querySelector(".lightbulb");
-
-function pulseImage() {
-  imageElement.style.transition = "transform 0.2s";
-  imageElement.style.transform = "scale(0.6)";
-  setTimeout(() => {
-    imageElement.style.transition = "transform 0.3s";
-    imageElement.style.transform = "scale(1.3)";
-    setTimeout(() => {
-      imageElement.style.transition = "transform 0.2s";
-      imageElement.style.transform = "scale(1)";
-    }, 800);
-  }, 5200);
-}
-
-setInterval(pulseImage, 1200);
-
-setInterval(pulseImage, 2000);
-
 document.querySelector(".send-button").addEventListener("click", function () {
   var name = document.querySelector(".contact-input-name").value;
   var email = "jonathan.hall5800@gmail.com";
