@@ -4,9 +4,6 @@
   box-sizing: border-box;
   /* border: 1px solid black; */
 }
-.card-text {
-  /* color: red; */
-}
 .underline {
   text-decoration: underline;
 }
@@ -47,6 +44,7 @@
   background-color: transparent;
   backdrop-filter: blur(5px);
   z-index: 10;
+  height: 7vh;
 }
 .header-jonny-to-top {
   text-decoration: none;
@@ -60,7 +58,7 @@
 .hero-section {
   display: flex;
   justify-content: space-around;
-  height: 100vh;
+  height: 97vh;
 }
 
 .landing-section {
