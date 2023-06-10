@@ -22,3 +22,17 @@ document.querySelector(".send-button").addEventListener("click", function () {
   document.querySelector(".contact-input-message").value = "";
   document.querySelector(".contact-input-email").value = "";
 });
+// Get the collapsible content element
+var collapsibleContent = document.getElementById("navbarNav");
+
+// Add a listener to the window resize event
+window.addEventListener("resize", function () {
+  // Check the screen width
+  if (window.innerWidth <= 700) {
+    // Add the "show" class to make the content visible
+    collapsibleContent.classList.add("show");
+  } else {
+    // Remove the "show" class to hide the content
+    collapsibleContent.classList.remove("show");
+  }
+});
