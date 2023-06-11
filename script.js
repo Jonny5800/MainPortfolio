@@ -1,3 +1,9 @@
+const phoneCall = (phoneNumber) => {
+  const link = document.createElement("a");
+  link.setAttribute("href", `tel:${phoneNumber}`);
+  link.click();
+};
+
 function scrollToElement(elementId) {
   const element = document.getElementById(elementId);
   if (element) {
@@ -6,33 +12,28 @@ function scrollToElement(elementId) {
 }
 
 document.querySelector(".send-button").addEventListener("click", function () {
-  var name = document.querySelector(".contact-input-name").value;
-  var email = "jonathan.hall5800@gmail.com";
-  var message = document.querySelector(".contact-input-message").value;
+  let name = document.querySelector(".contact-input-name").value;
+  let email = "jonathan.hall5800@gmail.com";
+  let message = document.querySelector(".contact-input-message").value;
 
-  var subject = encodeURIComponent("Hi I'm " + name + ", I saw your portfolio");
-  var body = encodeURIComponent(
+  let subject = encodeURIComponent("Hi I'm " + name + ", I saw your portfolio");
+  let body = encodeURIComponent(
     "Hi Jonny,\n\n" + message + "\n\nBest regards, \n\n" + name
   );
 
-  var mailtoLink = "mailto:" + email + "?subject=" + subject + "&body=" + body;
+  let mailtoLink = "mailto:" + email + "?subject=" + subject + "&body=" + body;
   window.location.href = mailtoLink;
 
   document.querySelector(".contact-input-name").value = "";
   document.querySelector(".contact-input-message").value = "";
   document.querySelector(".contact-input-email").value = "";
 });
-// Get the collapsible content element
-var collapsibleContent = document.getElementById("navbarNav");
 
-// Add a listener to the window resize event
+let collapsibleContent = document.getElementById("navbarNav");
 window.addEventListener("resize", function () {
-  // Check the screen width
   if (window.innerWidth <= 700) {
-    // Add the "show" class to make the content visible
     collapsibleContent.classList.add("show");
   } else {
-    // Remove the "show" class to hide the content
     collapsibleContent.classList.remove("show");
   }
 });
