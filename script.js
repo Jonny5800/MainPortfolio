@@ -11,6 +11,11 @@ function scrollToElement(elementId) {
   }
 }
 
+function closeNavbar() {
+  const navbar = document.getElementById("navbarNav");
+  navbar.classList.remove("show");
+}
+
 document.querySelector(".send-button").addEventListener("click", function () {
   let name = document.querySelector(".contact-input-name").value;
   let email = "jonathan.hall5800@gmail.com";

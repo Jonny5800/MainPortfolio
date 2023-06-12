@@ -23,6 +23,32 @@
   flex-direction: column;
   align-items: center;
 }
+.nav-number a {
+  color: white;
+}
+
+.hireButton {
+  background-color: rgb(91, 161, 230);
+  border-radius: 5px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.3s ease-in-out;
+  font-weight: bolder;
+  margin-right: 7px;
+}
+.hireButton:hover {
+  color: red;
+  border: red;
+}
+.hireButton {
+}
+.btn-info {
+  background-color: transparent;
+  font-weight: bolder;
+  margin-right: 7px;
+}
 .nav-number {
   padding-right: 10px;
 }
@@ -740,24 +766,30 @@
 
 .footer-items {
   position: relative;
-  color: white;
+  /* color: white; */
   transition: color 0.3s ease-in-out;
 }
 .footer-items > a {
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.footer-items > a:hover {
+  color: red;
 }
 .footer-items::after {
   transition: 0.3s ease-in-out;
 }
-.footer-items:hover {
+/* .footer-items:hover {
   color: rgb(91, 161, 230);
   color: white;
-}
-.footer-header {
-  position: relative;
-  color: rgb(91, 161, 230);
-  text-decoration: underline;
+  color: green;
+} */
+.footer-header > a {
+  text-decoration: none;
   transition: color 0.3s ease-in-out;
+}
+.footer-header > a:hover {
+  color: red;
 }
 
 .footer-header::after {
