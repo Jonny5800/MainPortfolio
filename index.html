@@ -8,17 +8,18 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Images/JLetter.jpg" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hire Jonny Hall</title>
+    <title>Jonny Hall Web Developer for Hire</title>
     <script
       src="https://kit.fontawesome.com/a5e402e3b2.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <section class="header-section">
+    <header class="header-section">
       <div class="container nav-container">
         <nav
           class="navbar navbar-expand-lg navbar-light bg-light transparent-background"
@@ -30,7 +31,12 @@
             <div class="button-number-div d-flex">
               <div class="nav-number">
                 <strong onclick="phoneCall('+447749519916')">
-                  <a class="hireButton" href="#contact-section">Hire Me</a>
+                  <a
+                    onclick="sendEmail()"
+                    class="hireButton"
+                    href="#contact-section"
+                    >Hire Me</a
+                  >
 
                   <i class="fa-solid fa-phone-volume fa-lg"></i>
                   +447749519916
@@ -39,18 +45,17 @@
               <button
                 class="navbar-toggler"
                 type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
                 aria-controls="navbarNav"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                onclick="handleNavbarTogglerClick()"
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
-
+            <!-- <div class="collapse navbar-collapse nav-number-right-div custom-navbar-collapse" id="navbarNav"> -->
             <div
-              class="collapse navbar-collapse nav-number-right-div"
+              class="collapse navbar-collapse nav-number-right-div custom-navbar-collapse"
               id="navbarNav"
             >
               <ul class="navbar-nav">
@@ -121,7 +126,7 @@
                 </li>
               </ul>
               <div class="nav-number-two">
-                <strong>
+                <strong onclick="sendEmail()">
                   <a class="hireButton" href="#contact-section">Hire Me</a>
                   <i class="fa-solid fa-phone-volume fa-lg"></i>
                   +447749519916
@@ -131,701 +136,741 @@
           </div>
         </nav>
       </div>
-    </section>
-
-    <section class="section hero-background landing-section">
-      <div class="container">
-        <div class="hero-section">
-          <div class="hero-left">
-            <h2 class="hero-big-text">Hi I'm a Developer</h2>
-
-            <h3 class="hero-big-text">Based in London</h3>
-            <div class="hero-left-buttons">
-              <button
-                class="button-view-work"
-                onclick="scrollToElement('project-section')"
-              >
-                View my Work
-              </button>
-              <p
-                class="hero-contact-me"
-                onclick="scrollToElement('contact-section')"
-              >
-                Contact Me
-              </p>
-            </div>
-          </div>
-          <div class="hero-right">
-            <container class="tilt-container">
-              <div class="tilt-box-wrap">
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <span class="t_over"></span>
-                <div class="tilt-box">
-                  <strong>
-                    <img
-                      class="heroPic"
-                      src="./Images/GreyTeeSquare.jpg"
-                      alt="squarePic"
-                    />
-                  </strong>
-                </div>
-              </div>
-            </container>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section about-me-section deep-blue" id="about-me-section">
-      <div class="container">
+    </header>
+    .
+    <main>
+      <section class="section hero-background landing-section">
         <div class="container">
-          <p class="mini-title-p"><span class="mini-title">About Me</span></p>
-          <h2 class="section-header">Allow me to introcuce myself</h2>
-        </div>
+          <div class="hero-section">
+            <div class="hero-left">
+              <h1 class="hero-big-text">Hi I'm a Developer</h1>
 
-        <div class="know-me-more">
-          <div class="know-me-more-left">
-            <div>
-              Hi, I'm
-              <span class="span-text-blue"
-                ><span class="underline"
-                  ><strong> Jonny Hall</strong></span
-                ></span
-              >
+              <h2 class="hero-big-text">Based in London</h2>
+              <div class="hero-left-buttons">
+                <button
+                  class="button-view-work"
+                  onclick="scrollToElement('project-section')"
+                >
+                  View my Work
+                </button>
+                <p
+                  class="hero-contact-me"
+                  onclick="scrollToElement('contact-section')"
+                >
+                  Contact Me
+                </p>
+              </div>
             </div>
-            <div>Thanks for checking out my page!</div>
-            <br />
-            <div>
-              Originally from Yorkshire, I live in London, England and I am a
-              Front End Developer
+            <div class="hero-right">
+              <container class="tilt-container">
+                <div class="tilt-box-wrap">
+                  <span class="t_over"></span>
+                  <span class="t_over"></span>
+                  <span class="t_over"></span>
+                  <span class="t_over"></span>
+                  <span class="t_over"></span>
+                  <span class="t_over"></span>
+                  <span class="t_over"></span>
+                  <span class="t_over"></span>
+                  <span class="t_over"></span>
+                  <div class="tilt-box">
+                    <strong>
+                      <img
+                        class="heroPic"
+                        src="./Images/GreyTeeSquare.jpg"
+                        alt="candidate picture"
+                      />
+                    </strong>
+                  </div>
+                </div>
+              </container>
             </div>
-            <div>
-              I have proficiency in the usuals such as
-              <strong
-                ><span class="span-text-blue"
-                  >HTML, CSS and JavaScript</span
-                ></strong
-              >
-              and I'm interested in building new
-              <span class="span-text-blue"
-                ><strong>Web Based Poducts</strong></span
-              >
-            </div>
-            <div>
+          </div>
+        </div>
+      </section>
+      <section class="section about-me-section deep-blue" id="about-me-section">
+        <div class="container">
+          <div class="container">
+            <p class="mini-title-p"><span class="mini-title">About Me</span></p>
+            <h2 class="section-header">Allow me to introcuce myself</h2>
+          </div>
+
+          <div class="know-me-more">
+            <div class="know-me-more-left">
+              <div>
+                Hi, I'm
+                <span class="span-text-blue"
+                  ><span class="underline"
+                    ><strong> Jonny Hall</strong></span
+                  ></span
+                >
+              </div>
+              <div>Thanks for checking out my page!</div>
               <br />
-              When I can, I enjoy developing with
-              <span class="span-text-blue">
-                <strong>React and TypeScript</strong></span
-              >
-            </div>
-          </div>
-          <div class="know-me-more-right">
-            <div>
-              <img
-                class="computer-guy"
-                src="./Images/computer-guy.png"
-                alt="computer-guy"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="know-me-more-sub-section">
-          <div class="know-more-item">
-            <div class="know-more-item-top">
-              <strong><span class="span-text-blue">Name:</span></strong>
-            </div>
-            <div class="know-more-item-bottom">Jonny Hall</div>
-          </div>
-          <div class="know-more-item">
-            <div class="know-more-item-top">
-              <strong><span class="span-text-blue">Email</span></strong>
-            </div>
-            <div class="know-more-item-bottom">jonathan.hall5800@gmail.com</div>
-          </div>
-
-          <div class="know-more-item">
-            <div class="know-more-item-top">
-              <strong><span class="span-text-blue">From:</span></strong>
-            </div>
-            <div class="know-more-item-bottom">Yorkshire</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container"></div>
-    </section>
-    <section class="section" id="what-i-do-section">
-      <div class="container">
-        <div>
-          <p class="mini-title-p"><span class="mini-title">What I Do</span></p>
-          <h2 class="section-header">How I Can help your next project</h2>
-        </div>
-        <div class="what-i-do-items text-align-center">
-          <div class="what-do-items-top-row">
-            <div class="card what-i-do-top-row-items" style="width: 18rem">
-              <img
-                src="./Images/WhatIDo/webDeveloping.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Web Development</h5>
-                <p class="card-text">
-                  I can use my skills to build websites that work on computer,
-                  responsive to mobile and use colour to make them more
-                  eyecatching.
-                </p>
+              <div>
+                Originally from Yorkshire, I live in London, England and I am a
+                Front End Developer
+              </div>
+              <div>
+                I have proficiency in the usuals such as
+                <strong
+                  ><span class="span-text-blue"
+                    >HTML, CSS and JavaScript</span
+                  ></strong
+                >
+                and I'm interested in building new
+                <span class="span-text-blue"
+                  ><strong>Web Based Poducts</strong></span
+                >
+              </div>
+              <div>
+                <br />
+                When I can, I enjoy developing with
+                <span class="span-text-blue">
+                  <strong>React and TypeScript</strong></span
+                >
               </div>
             </div>
-            <div class="card what-i-do-top-row-items" style="width: 18rem">
-              <img
-                src="./Images/WhatIDo/takingNote.jpg"
-                class="card-img-top"
-                alt="taking note"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Keen to Improve</h5>
-                <p class="card-text">
-                  My best compliment received was, "Your're so tennacious". I
-                  think back to this when facing difficult challenges.
-                </p>
-              </div>
-            </div>
-            <div class="card what-i-do-top-row-items" style="width: 18rem">
-              <img
-                src="./Images/WhatIDo/newPerspective.jpg"
-                class="card-img-top"
-                alt="mountain-top"
-              />
-              <div class="card-body">
-                <h5 class="card-title">A new Perspective</h5>
-                <p class="card-text">
-                  I find the phrase "Why not", both a brilliant answer and
-                  question when looking for new ways to solvle issues.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="what-do-items-bottom-row">
-            <div class="what-do-items-top-row">
-              <div class="card what-i-do-bottom-row-items" style="width: 18rem">
+            <div class="know-me-more-right">
+              <div>
                 <img
-                  src="./Images/WhatIDo/teamPlayer.jpg"
-                  class="card-img-top"
-                  alt="team-player"
+                  class="computer-guy"
+                  src="./Images/computer-guy.png"
+                  alt="cartoon web developer"
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Team Player</h5>
-                  <p class="card-text">
-                    I can work colaboratively and contribute to a team as well
-                    as working independently.
-                  </p>
-                </div>
               </div>
-              <div class="card what-i-do-bottom-row-items" style="width: 18rem">
-                <img
-                  src="./Images/WhatIDo/problemSolving.jpg"
-                  class="card-img-top"
-                  alt="problem-solving"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Problem Solving Skills</h5>
-                  <p class="card-text">
-                    I use my core undersatnding to come up with solutions to
-                    problems.
-                  </p>
-                </div>
-              </div>
-              <div class="card what-i-do-bottom-row-items" style="width: 18rem">
-                <img
-                  src="./Images/WhatIDo/softSkills-two.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Soft Skils</h5>
-                  <p class="card-text">
-                    Customer facing an people orientated roles have lead me to
-                    have soft skills vital for interaciton with others.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section resume-section" id="resume-section">
-      <div class="container">
-        <p class="mini-title-p"><span class="mini-title">Resume</span></p>
-        <h2 class="section-header mb-2">A summary of my resume</h2>
-        <div class="summary-sub-headers">
-          <div id="summary-education-header"><h3>My Education</h3></div>
-          <div id="summary-experience-header"><h3>My Experience</h3></div>
-        </div>
-        <div class="summary-section">
-          <div class="summary-section-left">
-            <div class="card summary-item-left">
-              <h4>Web Development</h4>
-              <h5>Online resources / Current</h5>
-              <p>
-                I have taken the time to teach myself alongside haveing a job as
-                a heating engineer. I have used online resources such as
-                Freecodecamp and the Odin Project. Starting with the usuals of
-                HTML, CSS and JS. Afterwards using Udemy courses and Youtube to
-                learn React and TypeScript
-              </p>
-            </div>
-            <div class="card summary-item-left">
-              <h4>Pharmaceutical and Chemical Science 2:1</h4>
-              <h5>University of Brighton</h5>
-              <p>
-                My course in PCS equipped me with skills that crossover for a
-                career in front end development. Problem solving skills, time
-                management, and critical thinking to name a few. I am an
-                adaptable individual who can work in a various work
-                environments.
-              </p>
-            </div>
-            <div class="card summary-item-left" id="summary-item-left-bottom">
-              <h4>NVQ Level3 Domestice Gas Manitenance</h4>
-              <h5>Blue Flame Certification</h5>
-              <p>
-                A large emphasis on working to industry standards andattention
-                to detail as mistakes can be fatal. Troubleshooting and problemm
-                solving were also a large factor in the training and assesments
-              </p>
             </div>
           </div>
 
-          <div id="summary-experience-header-narrow-view">
-            <h3>My Experience</h3>
-          </div>
-          <div class="summary-section-right">
-            <div class="card summary-item-right">
-              <h4>Service & Breakdown Gas Enginer</h4>
-              <h5>dates</h5>
-              <p>
-                Primarily fault diagnosis and repair of gas water and electrical
-                systems. Communicating with customers to inestigate problem
-                symptoms they are experienceng. Working to industry standards.
-                Using tecnical knowledge to find faults. Reading documentation
-                to to gain better knowledge of unfamiliar systems
-              </p>
+          <div class="know-me-more-sub-section">
+            <div class="know-more-item">
+              <div class="know-more-item-top">
+                <strong><span class="span-text-blue">Name:</span></strong>
+              </div>
+              <div class="know-more-item-bottom">Jonny Hall</div>
             </div>
-            <div class="card summary-item-right">
-              <h4>Recruitment Formula 1 & Aerospace</h4>
-              <h5>dates</h5>
-              <p>
-                Started in a resourcer position where I would fid candidates for
-                a resourcer. Worked hard and was promoted to the position of
-                resourcer with my own clients and candidares. Covid struck and
-                most of the company was mede redundant in the middle of the
-                pandemic due to no planes flying and the stoppage of motorsport
-              </p>
+            <div class="know-more-item">
+              <div class="know-more-item-top">
+                <strong><span class="span-text-blue">Email</span></strong>
+              </div>
+              <div class="know-more-item-bottom">
+                jonathan.hall5800@gmail.com
+              </div>
             </div>
-            <div class="card summary-item-right" id="summary-item-right-bottom">
-              <h4>Event Manager (Self employed)</h4>
-              <h5>dates</h5>
-              <p id="summary-education-bottom">
-                Managing and briefing teams on campaigns for brands such as
-                Coca-Cola, Cadburys, Jameson Event to event had lots of
-                variation but liasing with campaign managers, site managers and
-                esuring staff were aware of what is expected were common themes
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="cv-button-div">
-          <a href="./Documents/Junior Developer - Jonny Hall.docx"
-            ><button class="cv-button">Download CV</button></a
-          >
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="project-section">
-      <div class="container">
-        <p class="mini-title-p"><span class="mini-title">Portfolio</span></p>
-        <h2 class="section-header">Some of my most recent projects</h2>
-        <div class="project-area">
-          <div class="card-rows project-cards-top">
-            <div class="card project-card" style="width: 18rem">
-              <img
-                src="./Images/projectImages/laptopAndOrebro.jpg"
-                class="projects-card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Orebro</h5>
-                <p class="card-text">
-                  HTML, CSS, JS & React used. Responsive to mobile
-                </p>
-                <div class="project-buttons-div">
-                  <a
-                    href="https://jonny5800.github.io/orebro/"
-                    class="btn btn-primary"
-                    >Project</a
-                  >
-                  <a
-                    href="https://github.com/Jonny5800/orebro"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                </div>
+            <div class="know-more-item">
+              <div class="know-more-item-top">
+                <strong><span class="span-text-blue">From:</span></strong>
               </div>
-            </div>
-            <div class="card project-card" style="width: 18rem">
-              <img
-                src="./Images/projectImages/laptopAndTaskTracker.jpg"
-                class="projects-card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Task Tracker</h5>
-                <p class="card-text">
-                  HTML, CSS, JS & React used. Responsive to mobile
-                </p>
-                <div class="project-buttons-div">
-                  <a
-                    href="https://jonny5800.github.io/task-tracker/"
-                    class="btn btn-primary"
-                    >Project</a
-                  >
-                  <a
-                    href="https://github.com/Jonny5800/task-tracker"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-rows project-cards-bottom">
-            <div class="card project-card" style="width: 18rem">
-              <img
-                src="./Images/projectImages/LaptopAndCalculator.jpg"
-                class="projects-card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Calculator</h5>
-                <p class="card-text">HTML, CSS & JS used.</p>
-                <div class="project-buttons-div">
-                  <a
-                    href="https://jonny5800.github.io/calculator/"
-                    class="btn btn-primary"
-                    >Project</a
-                  >
-                  <a
-                    href="https://github.com/Jonny5800/calculator"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="card project-card" style="width: 18rem">
-              <img
-                src="./Images/projectImages/laptopAndBirthdayReminder.jpg"
-                class="projects-card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Birthday Reminder App</h5>
-                <p class="card-text">HTML, CSS, JS & React used.</p>
-                <div class="project-buttons-div">
-                  <a
-                    href="https://github.com/Jonny5800/birthday-reminder-app"
-                    class="btn btn-primary"
-                    >Project</a
-                  >
-                  <a
-                    href="https://github.com/Jonny5800/birthday-reminder-app"
-                    class="btn btn-primary"
-                    >GitHub</a
-                  >
-                </div>
-              </div>
+              <div class="know-more-item-bottom">Yorkshire</div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="blurred-image-div">
-        <img
-          class="blurred-image"
-          src="./Images/workingFromHomeBlurred.jpg"
-          alt="work-from-home-image"
-        />
-        <div class="image-overlay">
-          <h1 class="centered-text like-see-text">
-            If you like what you see, please get in contact.
-          </h1>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq-section">
-      <div class="container main-question-section">
-        <div class="question-section-left">
-          <div class="questions-header-container">
-            <p class="mini-title-p" id="question-mini-title-p">
-              <span class="mini-title" id="question-mini-title">FaQ</span>
+      </section>
+      <section>
+        <div class="container"></div>
+      </section>
+      <section class="section" id="what-i-do-section">
+        <div class="container">
+          <div>
+            <p class="mini-title-p">
+              <span class="mini-title">What I Do</span>
             </p>
-            <h2 class="section-header" id="question-section-header">
-              Have any Questions?
-            </h2>
+            <h2 class="section-header">How I Can help your next project</h2>
           </div>
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
+          <div class="what-i-do-items text-align-center">
+            <div class="what-do-items-top-row">
+              <div class="card what-i-do-top-row-items" style="width: 18rem">
+                <img
+                  src="./Images/WhatIDo/webDeveloping.jpg"
+                  class="card-img-top"
+                  alt="cartoon web developer"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    I can use my skills to build websites that work on computer,
+                    responsive to mobile and use colour to make them more
+                    eyecatching.
+                  </p>
+                </div>
+              </div>
+              <div class="card what-i-do-top-row-items" style="width: 18rem">
+                <img
+                  src="./Images/WhatIDo/takingNote.jpg"
+                  class="card-img-top"
+                  alt="taking note"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Keen to Improve</h5>
+                  <p class="card-text">
+                    My best compliment received was, "Your're so tennacious". I
+                    think back to this when facing difficult challenges.
+                  </p>
+                </div>
+              </div>
+              <div class="card what-i-do-top-row-items" style="width: 18rem">
+                <img
+                  src="./Images/WhatIDo/newPerspective.jpg"
+                  class="card-img-top"
+                  alt="mountain-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">A new Perspective</h5>
+                  <p class="card-text">
+                    I find the phrase "Why not", both a brilliant answer and
+                    question when looking for new ways to solvle issues.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="what-do-items-bottom-row">
+              <div class="what-do-items-top-row">
+                <div
+                  class="card what-i-do-bottom-row-items"
+                  style="width: 18rem"
                 >
-                  Who is Jonny
-                </button>
-              </h2>
+                  <img
+                    src="./Images/WhatIDo/teamPlayer.jpg"
+                    class="card-img-top"
+                    alt="team-player"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Team Player</h5>
+                    <p class="card-text">
+                      I can work colaboratively and contribute to a team as well
+                      as working independently.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="card what-i-do-bottom-row-items"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./Images/WhatIDo/problemSolving.jpg"
+                    class="card-img-top"
+                    alt="problem-solving"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Problem Solving Skills</h5>
+                    <p class="card-text">
+                      I use my core undersatnding to come up with solutions to
+                      problems.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="card what-i-do-bottom-row-items"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="./Images/WhatIDo/softSkills-two.jpg"
+                    class="card-img-top"
+                    alt="soft skills"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Soft Skils</h5>
+                    <p class="card-text">
+                      Customer facing an people orientated roles have lead me to
+                      have soft skills vital for interaciton with others.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section resume-section" id="resume-section">
+        <div class="container">
+          <p class="mini-title-p"><span class="mini-title">Resume</span></p>
+          <h2 class="section-header mb-2">A summary of my resume</h2>
+          <div class="summary-sub-headers">
+            <div id="summary-education-header"><h3>My Education</h3></div>
+            <div id="summary-experience-header"><h3>My Experience</h3></div>
+          </div>
+          <div class="summary-section">
+            <div class="summary-section-left">
+              <div class="card summary-item-left">
+                <!-- <h4>Web Development</h4> -->
+                <h4>Web Development - Responsive Web Design</h4>
+                <h5>FreeCodeCamp Certification</h5>
+                <p>
+                  Use of HTML and CSS to make responsive user-friendly
+                  interfaces
+                </p>
+
+                <h5>Online resources / Current</h5>
+                <p>
+                  I have taken the time to teach myself alongside haveing a job
+                  as a heating engineer. I have used online resources such as
+                  Freecodecamp and the Odin Project. Starting with the usuals of
+                  HTML, CSS and JS. Afterwards using Udemy courses and Youtube
+                  to learn React and TypeScript
+                </p>
+              </div>
+              <div class="card summary-item-left">
+                <h4>Pharmaceutical and Chemical Science 2:1</h4>
+                <h5>University of Brighton</h5>
+                <p>
+                  My course in PCS equipped me with skills that crossover for a
+                  career in front end development. Problem solving skills, time
+                  management, and critical thinking to name a few. I am an
+                  adaptable individual who can work in a various work
+                  environments.
+                </p>
+              </div>
+              <div class="card summary-item-left" id="summary-item-left-bottom">
+                <h4>NVQ Level3 Domestice Gas Manitenance</h4>
+                <h5>Blue Flame Certification</h5>
+                <p>
+                  A large emphasis on working to industry standards andattention
+                  to detail as mistakes can be fatal. Troubleshooting and
+                  problemm solving were also a large factor in the training and
+                  assesments
+                </p>
+              </div>
+            </div>
+
+            <div id="summary-experience-header-narrow-view">
+              <h3>My Experience</h3>
+            </div>
+            <div class="summary-section-right">
+              <div class="card summary-item-right">
+                <h4>Service & Breakdown Gas Enginer</h4>
+                <h5>Current</h5>
+                <p>
+                  Primarily fault diagnosis and repair of gas water and
+                  electrical systems. Communicating with customers to inestigate
+                  problem symptoms they are experienceng. Working to industry
+                  standards. Using tecnical knowledge to find faults. Reading
+                  documentation to to gain better knowledge of unfamiliar
+                  systems
+                </p>
+              </div>
+              <div class="card summary-item-right">
+                <h4>Recruitment Formula 1 & Aerospace</h4>
+                <br />
+                <p>
+                  Started in a resourcer position where I would fid candidates
+                  for a resourcer. Worked hard and was promoted to the position
+                  of resourcer with my own clients and candidares. Covid struck
+                  and most of the company was mede redundant in the middle of
+                  the pandemic due to no planes flying and the stoppage of
+                  motorsport
+                </p>
+              </div>
               <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
+                class="card summary-item-right"
+                id="summary-item-right-bottom"
               >
-                <div class="accordion-body">
-                  <strong
-                    >A self-motivated, self-taught, Front-End Developer.</strong
+                <h4>Event Manager (Self employed)</h4>
+                <br />
+                <p id="summary-education-bottom">
+                  Managing and briefing teams on campaigns for brands such as
+                  Coca-Cola, Cadburys, Jameson Event to event had lots of
+                  variation but liasing with campaign managers, site managers
+                  and esuring staff were aware of what is expected were common
+                  themes
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="cv-button-div">
+            <a href="./Documents/Junior Developer - Jonny Hall.docx"
+              ><button class="cv-button">Download CV</button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="project-section">
+        <div class="container">
+          <p class="mini-title-p"><span class="mini-title">Portfolio</span></p>
+          <h2 class="section-header">Some of my most recent projects</h2>
+          <div class="project-area">
+            <div class="card-rows project-cards-top">
+              <div class="card project-card" style="width: 18rem">
+                <img
+                  src="./Images/projectImages/laptopAndOrebro.jpg"
+                  class="projects-card-img-top"
+                  alt="Project 1 screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Orebro</h5>
+                  <p class="card-text">
+                    HTML, CSS, JS & React used. Responsive to mobile. Google and
+                    Weather APIs used to retreive & display weather data and
+                    display embed Google Maps.
+                  </p>
+                  <div class="project-buttons-div">
+                    <a
+                      href="https://jonny5800.github.io/orebro/"
+                      class="btn btn-primary"
+                      >Project</a
+                    >
+                    <a
+                      href="https://github.com/Jonny5800/orebro"
+                      class="btn btn-primary"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card project-card" style="width: 18rem">
+                <img
+                  src="./Images/projectImages/laptopAndTaskTracker.jpg"
+                  class="projects-card-img-top"
+                  alt="project 2 screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Task Tracker</h5>
+                  <p class="card-text">
+                    HTML, CSS, JS & React used. React used for handling state
+                    data and props etc. I used CSS to style the components which
+                    were made with React.
+                    <!-- Responsive to mobile -->
+                  </p>
+                  <div class="project-buttons-div">
+                    <a
+                      href="https://jonny5800.github.io/task-tracker/"
+                      class="btn btn-primary"
+                      >Project</a
+                    >
+                    <a
+                      href="https://github.com/Jonny5800/task-tracker"
+                      class="btn btn-primary"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-rows project-cards-bottom">
+              <div class="card project-card" style="width: 18rem">
+                <img
+                  src="./Images/projectImages/LaptopAndCalculator.jpg"
+                  class="projects-card-img-top"
+                  alt="project 3 screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Calculator</h5>
+                  <p class="card-text">HTML, CSS & JS used.</p>
+                  <div class="project-buttons-div">
+                    <a
+                      href="https://jonny5800.github.io/calculator/"
+                      class="btn btn-primary"
+                      >Project</a
+                    >
+                    <a
+                      href="https://github.com/Jonny5800/calculator"
+                      class="btn btn-primary"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="card project-card" style="width: 18rem">
+                <img
+                  src="./Images/projectImages/laptopAndBirthdayReminder.jpg"
+                  class="projects-card-img-top"
+                  alt="project 4 screenshot"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Birthday Reminder App</h5>
+                  <p class="card-text">HTML, CSS, JS & React used.</p>
+                  <div class="project-buttons-div">
+                    <a
+                      href="https://github.com/Jonny5800/birthday-reminder-app"
+                      class="btn btn-primary"
+                      >Project</a
+                    >
+                    <a
+                      href="https://github.com/Jonny5800/birthday-reminder-app"
+                      class="btn btn-primary"
+                      >GitHub</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="blurred-image-div">
+          <img
+            class="blurred-image"
+            src="./Images/workingFromHomeBlurred.jpg"
+            alt="work-from-home-image"
+          />
+          <div class="image-overlay">
+            <h3 class="centered-text like-see-text">
+              If you like what you see, please get in contact.
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq-section">
+        <div class="container main-question-section">
+          <div class="question-section-left">
+            <div class="questions-header-container">
+              <p class="mini-title-p" id="question-mini-title-p">
+                <span class="mini-title" id="question-mini-title">FaQ</span>
+              </p>
+              <h2 class="section-header" id="question-section-header">
+                Have any Questions?
+              </h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
                   >
+                    Who is Jonny
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >A self-motivated, self-taught, Front-End
+                      Developer.</strong
+                    >
 
-                  I'm well-versed in the usuals: HTML, CSS, JavaScript, and
-                  React. The more I learn and explore the world of front-end
-                  development, the more my enthusiasm grows. I find great
-                  satisfaction in creating visually appealing and interactive
-                  user interfaces that enhance the overall user experience.
+                    I'm well-versed in the usuals: HTML, CSS, JavaScript, and
+                    React. The more I learn and explore the world of front-end
+                    development, the more my enthusiasm grows. I find great
+                    satisfaction in creating visually appealing and interactive
+                    user interfaces that enhance the overall user experience.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How can Jonny add to your company
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
                 >
-                  How can Jonny add to your company
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>Tenacity, resiliance and a drive to improve.</strong>
-                  Apart from my technical skills, I'm open to working with
-                  others and converging ideas to achieve the optimum outcome.
-                  It's all with the goal of continually improving and delivering
-                  high-quality work. I am dedicated to creating clean,
-                  maintainable code and ensuring that the websites and
-                  applications I develop are user-friendly and visually
-                  appealing.
+                  <div class="accordion-body">
+                    <strong
+                      >Tenacity, resiliance and a drive to improve.</strong
+                    >
+                    Apart from my technical skills, I'm open to working with
+                    others and converging ideas to achieve the optimum outcome.
+                    It's all with the goal of continually improving and
+                    delivering high-quality work. I am dedicated to creating
+                    clean, maintainable code and ensuring that the websites and
+                    applications I develop are user-friendly and visually
+                    appealing.
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Why did Jonny choose a career in IT
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
                 >
-                  Why did Jonny choose a career in IT
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>Finding a way to make things happen.</strong> I love
-                  making things work, especially when there is more than one way
-                  to reach the same endpoint. Having a core understanding and
-                  then using that to make a decision on how to achieve a target
-                  is something I really enjoy doing.
+                  <div class="accordion-body">
+                    <strong>Finding a way to make things happen.</strong> I love
+                    making things work, especially when there is more than one
+                    way to reach the same endpoint. Having a core understanding
+                    and then using that to make a decision on how to achieve a
+                    target is something I really enjoy doing.
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
-                  aria-expanded="true"
-                  aria-controls="collapseFour"
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="true"
+                    aria-controls="collapseFour"
+                  >
+                    What are Jonny's hobbies & interests
+                  </button>
+                </h2>
+
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
                 >
-                  What are Jonny's hobbies & interests
-                </button>
-              </h2>
+                  <div class="accordion-body">
+                    <strong>Snowboarding, gokarting, fast cars.</strong>
 
-              <div
-                id="collapseFour"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>Snowboarding, gokarting, fast cars.</strong>
-
-                  I enjoy most things that involve speed and a little bit of
-                  danger, so these three are my go-to activities. Race tracks
-                  and ski slopes are where I like to spend some of my free time
-                  when away from my laptop.
+                    I enjoy most things that involve speed and a little bit of
+                    danger, so these three are my go-to activities. Race tracks
+                    and ski slopes are where I like to spend some of my free
+                    time when away from my laptop.
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="accordion-item" id="accordion-item-five">
-              <h2 class="accordion-header" id="headingFive">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
-                  aria-expanded="true"
-                  aria-controls="collapseFive"
+              <div class="accordion-item" id="accordion-item-five">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="true"
+                    aria-controls="collapseFive"
+                  >
+                    Why you should hire Jonny
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
                 >
-                  Why you should hire Jonny
-                </button>
-              </h2>
-              <div
-                id="collapseFive"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingFive"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>I seek out constructive criticism.</strong>
+                  <div class="accordion-body">
+                    <strong>I seek out constructive criticism.</strong>
 
-                  I am adaptable, eager to learn more and definitely self
-                  motivated. I have found that the more I learn and better I
-                  get, the more I love it all. I can communicate thoughts and
-                  ideas, actively seen constructive criticism and then go to
-                  work on that feedback.
+                    I am adaptable, eager to learn more and definitely self
+                    motivated. I have found that the more I learn and better I
+                    get, the more I love it all. I can communicate thoughts and
+                    ideas, actively seen constructive criticism and then go to
+                    work on that feedback.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="question-section-right">
-          <div class="question-section-image-div">
-            <img
-              class="lightbulb"
-              src="./Images/lightbulbTwo.png"
-              alt="lightbuld-image"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact-section">
-      <div class="container contact-container">
-        <div class="main-contact-section">
-          <div class="contact-section-left">
-            <div class="contact-header-left"><h2>Lets Get in Touch</h2></div>
-            <div class="contact-left-sect-a text-5">
-              I enjoy discussing anything tech or car related so feel free to
-              contact me and have a chat.
-            </div>
-            <div class="contact-left-sect-b">
-              <strong>Living in:</strong>
-              <div>London</div>
-            </div>
-            <div class="contact-left-sect-c">
-              <strong>Call:</strong>
-
-              <div>+447749519916</div>
-            </div>
-            <div class="contact-methods mt-3"><h3>Contact me via</h3></div>
-            <div class="contact-left-sect-d">
-              <a
-                href="https://github.com/Jonny5800"
-                target="_blank"
-                rel="noopener noreferer"
-              >
-                <i class="fa-brands fa-github fa-xl"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/jonny-hall-95393a267/"
-                target="_blank"
-                rel="noopener noreferer"
-              >
-                <i class="fa-brands fa-linkedin fa-xl"></i
-              ></a>
-              <a href="https://wa.me/+447749519916"
-                ><i class="fa-brands fa-whatsapp fa-xl"></i
-              ></a>
-            </div>
-          </div>
-          <div class="contact-section-right">
-            <div class="contact-header-right"><h2>Send an Email</h2></div>
-
-            <div class="contact-right-sect-a">What is your name:</div>
-            <div>
-              <input
-                class="contact-input-areas contact-input-name"
-                type="text"
+          <div class="question-section-right">
+            <div class="question-section-image-div">
+              <img
+                class="lightbulb"
+                src="./Images/lightbulbTwo.png"
+                alt="lightbulb"
               />
             </div>
-            <div class="contact-right-sect-a">Your Email address:</div>
-            <div>
-              <input
-                class="contact-input-areas contact-input-email"
-                type="text"
-              />
-            </div>
-            <div class="contact-right-sect-a">How can I help you?</div>
-            <div>
-              <textarea
-                class="contact-input-areas contact-input-message"
-                type="text"
-              ></textarea>
-            </div>
-
-            <button class="send-button">Send</button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="footer-section">
+      </section>
+
+      <section class="section contact-section" id="contact-section">
+        <div class="container contact-container">
+          <div class="main-contact-section">
+            <div class="contact-section-left">
+              <div class="contact-header-left"><h2>Lets Get in Touch</h2></div>
+              <div class="contact-left-sect-a text-5">
+                I enjoy discussing anything tech or car related so feel free to
+                contact me and have a chat.
+              </div>
+              <div class="contact-left-sect-b">
+                <strong>Living in:</strong>
+                <div>London</div>
+              </div>
+              <div class="contact-left-sect-c">
+                <strong>Call:</strong>
+
+                <div>+447749519916</div>
+              </div>
+              <div class="contact-methods mt-3"><h3>Contact me via</h3></div>
+              <div class="contact-left-sect-d">
+                <a
+                  href="https://github.com/Jonny5800"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <i class="fa-brands fa-github fa-xl"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/jonny-hall-developer/"
+                  target="_blank"
+                  rel="noopener noreferer"
+                >
+                  <i class="fa-brands fa-linkedin fa-xl"></i
+                ></a>
+                <a href="https://wa.me/+447749519916"
+                  ><i class="fa-brands fa-whatsapp fa-xl"></i
+                ></a>
+              </div>
+            </div>
+            <div class="contact-section-right">
+              <div class="contact-header-right">
+                <h2 id="emailHeader">Send an Email</h2>
+              </div>
+
+              <div class="contact-right-sect-a">What is your name:</div>
+              <div>
+                <input
+                  class="contact-input-areas contact-input-name"
+                  type="text"
+                />
+              </div>
+              <div class="contact-right-sect-a">Your Email address:</div>
+              <div>
+                <input
+                  class="contact-input-areas contact-input-email"
+                  type="text"
+                />
+              </div>
+              <div class="contact-right-sect-a">How can I help you?</div>
+              <div>
+                <textarea
+                  class="contact-input-areas contact-input-message"
+                  type="text"
+                ></textarea>
+              </div>
+
+              <button class="send-button">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-section">
       <div class="container footer">
         <div class="container">
           <div class="row align-items-start">
@@ -857,7 +902,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
     <script src="script.js"></script>
     <script

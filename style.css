@@ -42,8 +42,7 @@
   color: red;
   border: red;
 }
-.hireButton {
-}
+
 .btn-info {
   background-color: transparent;
   font-weight: bolder;
@@ -99,6 +98,117 @@
 .span-number {
   display: flex;
   justify-content: right;
+}
+
+.tilt-container {
+  font-size: 16px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tilt-box-wrap {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  transition: 0.6s ease-out;
+  perspective: 1000px;
+}
+.tilt-box-wrap:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
+.tilt-box {
+  width: 100%;
+  height: 100%;
+  background: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #fff;
+  font-size: 90px;
+  text-transform: uppercase;
+  transition: all 0.6s ease-out;
+  transform: rotateX(0deg) rotateY(0deg);
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.tilt-box strong {
+  transform: translateZ(40px);
+}
+.t_over {
+  width: 33.333%;
+  height: 33.333%;
+  position: absolute;
+  z-index: 1;
+  cursor: all-scroll;
+}
+.t_over:nth-child(1) {
+  left: 0;
+  top: 0;
+}
+.t_over:nth-child(2) {
+  left: 33.333%;
+  top: 0;
+}
+.t_over:nth-child(3) {
+  left: 66.666%;
+  top: 0;
+}
+.t_over:nth-child(4) {
+  left: 0;
+  top: 33.333%;
+}
+.t_over:nth-child(5) {
+  left: 33.333%;
+  top: 33.333%;
+}
+.t_over:nth-child(6) {
+  left: 66.666%;
+  top: 33.333%;
+}
+.t_over:nth-child(7) {
+  left: 0;
+  top: 66.666%;
+}
+.t_over:nth-child(8) {
+  left: 33.333%;
+  top: 66.666%;
+}
+.t_over:nth-child(9) {
+  left: 66.666%;
+  top: 66.666%;
+}
+
+.t_over:nth-child(1):hover ~ .tilt-box {
+  transform: rotateX(-20deg) rotateY(20deg);
+}
+.t_over:nth-child(2):hover ~ .tilt-box {
+  transform: rotateX(-20deg) rotateY(0deg);
+}
+.t_over:nth-child(3):hover ~ .tilt-box {
+  transform: rotateX(-20deg) rotateY(-20deg);
+}
+.t_over:nth-child(4):hover ~ .tilt-box {
+  transform: rotateX(0deg) rotateY(20deg);
+}
+.t_over:nth-child(5):hover ~ .tilt-box {
+  transform: rotateX(0deg) rotateY(0deg);
+}
+.t_over:nth-child(6):hover ~ .tilt-box {
+  transform: rotateX(0deg) rotateY(-20deg);
+}
+.t_over:nth-child(7):hover ~ .tilt-box {
+  transform: rotateX(20deg) rotateY(20deg);
+}
+.t_over:nth-child(8):hover ~ .tilt-box {
+  transform: rotateX(20deg) rotateY(0deg);
+}
+.t_over:nth-child(9):hover ~ .tilt-box {
+  transform: rotateX(20deg) rotateY(20deg);
 }
 
 .hero-background {
@@ -198,8 +308,8 @@
     align-items: center;
     padding-bottom: 20px;
   }
-  .hero-left > h2,
-  .hero-left > h3 {
+  .hero-left > h1,
+  .hero-left > h2 {
     text-align: center;
   }
 
@@ -512,6 +622,27 @@
 .lightbulb {
   max-height: 300px;
   width: auto;
+  transition: ease-in-out;
+  transform-origin: center bottom;
+}
+
+@keyframes rotateAndReturn {
+  0% {
+    transform: rotate(0);
+  }
+  33% {
+    transform: rotate(-45deg);
+  }
+  66% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.lightbulb:hover {
+  animation: rotateAndReturn 1s;
 }
 
 .question-section-left {
@@ -623,6 +754,44 @@
   background-color: black;
   font-weight: bolder;
 }
+
+.flash-animation {
+  animation: flash 3s;
+}
+
+@keyframes flash {
+  10% {
+    color: red;
+  }
+  20% {
+    color: red;
+  }
+  30% {
+    color: black;
+  }
+  40% {
+    color: red;
+  }
+  50% {
+    color: red;
+  }
+  60% {
+    color: black;
+  }
+  70% {
+    color: red;
+  }
+  80% {
+    color: red;
+  }
+  90% {
+    color: black;
+  }
+  100% {
+    color: black;
+  }
+}
+
 @media (max-width: 930px) {
   .main-contact-section {
     display: flex;
@@ -644,7 +813,7 @@
     padding-top: 10px;
   }
 }
-
+/* 
 .tilt-container {
   font-size: 16px;
   margin: 0;
@@ -754,7 +923,7 @@
 }
 .t_over:nth-child(9):hover ~ .tilt-box {
   transform: rotateX(20deg) rotateY(20deg);
-}
+} */
 
 .footer-section {
   padding: 30px 0px 50px;
@@ -766,7 +935,6 @@
 
 .footer-items {
   position: relative;
-  /* color: white; */
   transition: color 0.3s ease-in-out;
 }
 .footer-items > a {
@@ -779,11 +947,7 @@
 .footer-items::after {
   transition: 0.3s ease-in-out;
 }
-/* .footer-items:hover {
-  color: rgb(91, 161, 230);
-  color: white;
-  color: green;
-} */
+
 .footer-header > a {
   text-decoration: none;
   transition: color 0.3s ease-in-out;

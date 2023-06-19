@@ -1,9 +1,3 @@
-const phoneCall = (phoneNumber) => {
-  const link = document.createElement("a");
-  link.setAttribute("href", `tel:${phoneNumber}`);
-  link.click();
-};
-
 function scrollToElement(elementId) {
   const element = document.getElementById(elementId);
   if (element) {
@@ -34,11 +28,28 @@ document.querySelector(".send-button").addEventListener("click", function () {
   document.querySelector(".contact-input-email").value = "";
 });
 
-let collapsibleContent = document.getElementById("navbarNav");
-window.addEventListener("resize", function () {
-  if (window.innerWidth <= 700) {
-    collapsibleContent.classList.add("show");
-  } else {
-    collapsibleContent.classList.remove("show");
+let navbarContent = document.getElementById("navbarNav");
+function toggleNavbar() {
+  navbarContent.classList.toggle("show");
+}
+function handleNavbarTogglerClick() {
+  toggleNavbar();
+}
+function closeNavbar() {
+  if (navbarContent.classList.contains("show")) {
+    toggleNavbar();
   }
+}
+const navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
+navbarLinks.forEach(function (link) {
+  link.addEventListener("click", closeNavbar);
 });
+
+function sendEmail() {
+  var emailHeader = document.getElementById("emailHeader");
+  emailHeader.classList.add("flash-animation");
+
+  setTimeout(function () {
+    emailHeader.classList.remove("flash-animation");
+  }, 9000);
+}
