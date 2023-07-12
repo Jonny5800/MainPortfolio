@@ -53,3 +53,21 @@ function sendEmail() {
     emailHeader.classList.remove("flash-animation");
   }, 9000);
 }
+
+const heroPic = document.querySelector(".heroPic");
+
+function toggleBorderColor() {
+  heroPic.classList.toggle("green-border");
+}
+
+function heroBorderFlash() {
+  toggleBorderColor();
+  setTimeout(toggleBorderColor, 400);
+}
+setInterval(heroBorderFlash, 3000);
+
+function handleDropdownClick(event) {
+  event.preventDefault();
+  var dropdownMenu = event.target.nextElementSibling;
+  dropdownMenu.classList.toggle("show");
+}

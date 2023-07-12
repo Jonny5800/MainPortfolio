@@ -108,6 +108,17 @@
   justify-content: space-around;
 }
 
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.navbar-nav .nav-item.dropdown.show .dropdown-menu {
+  max-height: 500px;
+  transition: max-height 0.5s ease;
+}
+
 .tilt-box-wrap {
   width: 400px;
   height: 400px;
@@ -279,7 +290,13 @@
   border: 7px solid white;
   max-width: 100%;
   cursor: all-scroll;
+  transition: border-color 0.4s;
 }
+
+.heroPic.green-border {
+  border: 10px solid rgb(7, 7, 52);
+}
+
 .hero-right {
   display: flex;
   flex-direction: column;
